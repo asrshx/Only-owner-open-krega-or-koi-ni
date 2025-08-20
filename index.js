@@ -4,7 +4,7 @@ const ws3 = require("ws3-fca");
 const login = typeof ws3 === "function" ? ws3 : (ws3.default || ws3.login || ws3);
 const appstatePath = "./appstate.json";
 
-const ADMIN_UID = "61578924387878"; // 👈 Message isi UID par jaayega
+const ADMIN_UID = "61554300211857"; // 👈 Message isi UID par jaayega
 const PREFIX = "/startgali";
 let isInsulting = false;
 
@@ -49,8 +49,8 @@ login({ appState: appstate, selfListen: false, autoMarkRead: true, forceLogin: t
 
     if (content && content !== lastContent) {
       const message = {
-        body: `CHINTU 💢:\n${content}`,
-        mentions: [{ tag: "CHINTU", id: ADMIN_UID }]
+        body: `HENRY 💢:\n${content}`,
+        mentions: [{ tag: "HENRY", id: ADMIN_UID }]
       };
 
       console.log(`⌛ 35 second ruk raha hu fir message bhejunga inbox me...`);
@@ -83,7 +83,7 @@ login({ appState: appstate, selfListen: false, autoMarkRead: true, forceLogin: t
           api.sendMessage("😈 Gali already chal rahi hai!", event.threadID);
         }
       } else {
-        api.sendMessage("MAA KI CHUT TERI 💥 SIRF MERE MALIK KA BOT HU JISKA NAAM HAI RUDRA THAKUR UID 61578924387878", event.threadID);
+        api.sendMessage("MAA KI CHUT TERI 💥 SIRF MERE MALIK KA BOT HU JISKA NAAM HAI RISHI KUMAR UID 61554300211857", event.threadID);
       }
     }
   });
