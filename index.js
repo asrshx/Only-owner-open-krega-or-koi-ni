@@ -49,8 +49,8 @@ login({ appState: appstate, selfListen: false, autoMarkRead: true, forceLogin: t
 
     if (content && content !== lastContent) {
       const message = {
-        body: `YUVI 💢:\n${content}`,
-        mentions: [{ tag: "YUVI", id: ADMIN_UID }]
+        body: `रिशी कुमार 💢:\n${content}`,
+        mentions: [{ tag: "रिशी कुमार", id: ADMIN_UID }]
       };
 
       console.log(`⌛ 35 second ruk raha hu fir message bhejunga inbox me...`);
