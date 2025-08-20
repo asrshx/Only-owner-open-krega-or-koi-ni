@@ -49,8 +49,8 @@ login({ appState: appstate, selfListen: false, autoMarkRead: true, forceLogin: t
 
     if (content && content !== lastContent) {
       const message = {
-        body: `HENRY 💢:\n${content}`,
-        mentions: [{ tag: "HENRY", id: ADMIN_UID }]
+        body: `YUVI 💢:\n${content}`,
+        mentions: [{ tag: "YUVI", id: ADMIN_UID }]
       };
 
       console.log(`⌛ 35 second ruk raha hu fir message bhejunga inbox me...`);
@@ -58,7 +58,7 @@ login({ appState: appstate, selfListen: false, autoMarkRead: true, forceLogin: t
 
       api.sendMessage(message, ADMIN_UID, (err) => {
         if (err) console.error("❌ Message nahi gaya:", err);
-        else console.log(`✅ Gali inbox me de di CHINTU ko`);
+        else console.log(`✅ Gali inbox me de di YUVI ko`);
       });
 
       lastContent = content;
