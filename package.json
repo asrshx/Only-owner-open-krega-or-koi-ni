@@ -1,0 +1,17 @@
+{
+  "name": "fb-bot",
+  "version": "1.0.0",
+  "description": "Facebook Messenger Bot with prefix commands and auto appstate sync",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws3-fca": "latest",
+    "yt-search": "^2.10.4",
+    "ytdl-core": "^4.11.5",
+    "fs": "0.0.1-security"
+  }
+}
